@@ -1,0 +1,67 @@
+<html>  
+<head>   
+    <title> Co Author </title>  
+</head>  
+<script src="index.js"></script> 
+
+<!-- <script>
+    let usedCards = []
+
+    function getRandomIntInclusive(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min + 1) + min);
+    }
+
+    function getRandomMotivationCard(numPlayers) {
+        for (let i=0; i<numPlayers; i++){
+            playerNum = i+1;
+            document.getElementById("playerHeader"+playerNum).innerHTML += "Player "+playerNum;
+            for (let j=0; j<5; j++) {
+                // print("hello");
+                randomNum = getRandomIntInclusive(2,96);
+                while (randomNum in usedCards) {
+                    randomNum = getRandomIntInclusive(2,96);
+                }
+                // randomNum = getRandomIntInclusive(2,96);
+                usedCards.push(randomNum);
+                // playerNum = i+1;
+                // console.log(randomNum);
+                document.getElementById("result"+playerNum).innerHTML += '<img src =../coauthor/cards/Motivation-'+randomNum+'.jpg />';
+            }
+        }
+    }
+</script> -->
+
+<body>
+    <button onclick = "getRandomGenre(); getRandomChapterCard(); getRandomMotivationCard(5); style.display = 'none';">Play!</button>
+
+    <h1 id="genreHeader"></h1>
+    <span id="genre" onclick="getRandomGenre();"> </span>
+    </br>
+
+    <h1 id="chapterCardHeader"></h1>
+    <span id="chapterCard"> </span>
+    </br>
+
+    <h1 id="playerHeader1"></h1>
+    <span id="result1"> </span>
+    </br>
+
+    <h1 id="playerHeader2"></h1>
+    <span id="result2"> </span>
+    </br>
+
+    <h1 id="playerHeader3"></h1>
+    <span id="result3"> </span>
+    </br>
+
+    <h1 id="playerHeader4"></h1>
+    <span id="result4"> </span>
+    </br>
+
+    <h1 id="playerHeader5"></h1>
+    <span id="result5"> </span>
+    </br>
+</body>
+</html>
