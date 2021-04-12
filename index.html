@@ -1,8 +1,9 @@
 <html>  
 <head>   
     <title> Co Author </title>  
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script> 
 </head>  
-<script src="index.js"></script> 
 
 <!-- <script>
     let usedCards = []
@@ -34,8 +35,10 @@
 </script> -->
 
 <body>
+    <h1>Co Author</h1>
+
     <div id="instructions">
-        <h1>Instructions</h1>
+        <h2>Instructions</h2>
         <ul>
             <li>Over Zoom, one player will share their screen with the Co-Author link. That player will start as Editor and all other players will be Authors for the first round.</li>
             <li>The Editor will shuffle the Genre, Chapter card and the round by clicking on the card.</li>
@@ -48,31 +51,31 @@
 
     <button onclick = "hideInstructions(); getRandomGenre(); getRandomChapterCard(); getRandomMotivationCard(5); style.display = 'none';">Play!</button>
 
-    <h1 id="genreHeader"></h1>
+    <h2 id="genreHeader"></h2>
     <span id="genre" onclick="getRandomGenre();"> </span>
     </br>
 
-    <h1 id="chapterCardHeader"></h1>
+    <h2 id="chapterCardHeader"></h2>
     <span id="chapterCard"> </span>
     </br>
 
-    <h1 id="playerHeader1"></h1>
+    <h2 id="playerHeader1"></h2>
     <span id="result1"> </span>
     </br>
 
-    <h1 id="playerHeader2"></h1>
+    <h2 id="playerHeader2"></h2>
     <span id="result2"> </span>
     </br>
 
-    <h1 id="playerHeader3"></h1>
+    <h2 id="playerHeader3"></h2>
     <span id="result3"> </span>
     </br>
 
-    <h1 id="playerHeader4"></h1>
+    <h2 id="playerHeader4"></h2>
     <span id="result4"> </span>
     </br>
 
-    <h1 id="playerHeader5"></h1>
+    <h2 id="playerHeader5"></h2>
     <span id="result5"> </span>
     </br>
 </body>

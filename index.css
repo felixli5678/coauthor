@@ -1,0 +1,10 @@
+body {
+    font-family: Georgia;
+}
+
+button {
+    font-family: Georgia;
+    font-size: 15px;
+    background-color: white;
+    border: 1px solid black;
+}
