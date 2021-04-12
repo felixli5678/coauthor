@@ -11,6 +11,9 @@ const usedChapterCards = new Set()
         randomNum = getRandomIntInclusive(min, max);
 
         if (cardType=="Motivation") {
+            if (usedMotivationCards.size == 95) {
+                usedMotivationCards.clear();
+            }
             while (usedMotivationCards.has(randomNum)) {
                 console.log("oop"+randomNum);
                 newRandomNum = getRandomIntInclusive(min, max);
@@ -20,6 +23,9 @@ const usedChapterCards = new Set()
             }
             usedMotivationCards.add(randomNum);
         } else {
+            if (usedChapterCards.size == 36) {
+                usedChapterCards.clear();
+            }
             while (usedChapterCards.has(randomNum)) {
                 // console.log("oop"+randomNum);
                 newRandomNum = getRandomIntInclusive(min, max);
