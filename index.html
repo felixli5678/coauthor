@@ -34,7 +34,19 @@
 </script> -->
 
 <body>
-    <button onclick = "getRandomGenre(); getRandomChapterCard(); getRandomMotivationCard(5); style.display = 'none';">Play!</button>
+    <div id="instructions">
+        <h1>Instructions</h1>
+        <ul>
+            <li>Over Zoom, one player will share their screen with the Co-Author link. That player will start as Editor and all other players will be Authors for the first round.</li>
+            <li>The Editor will shuffle the Genre, Chapter card and the round by clicking on the card.</li>
+            <li>The Authors will use the Genre, Opening Line from the Chapter card, and at least two of the pictures on their Inspiration cards to make up a 45 second story to tell to the other players.</li>
+            <li>When all Authors have told their story, the Editor chooses their favorite and that Author wins the round and becomes the next Editor.</li>
+            <li>Before a new round Authors “draw” new Inspiration cards by clicking on the used cards to replenish their hands and the Editor draws re-shuffles the Genre and Chapter card.</li>
+            <li>First player to win 5 rounds wins the game!</li>
+        </ul>
+    </div>
+
+    <button onclick = "hideInstructions(); getRandomGenre(); getRandomChapterCard(); getRandomMotivationCard(5); style.display = 'none';">Play!</button>
 
     <h1 id="genreHeader"></h1>
     <span id="genre" onclick="getRandomGenre();"> </span>

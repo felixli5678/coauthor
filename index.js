@@ -87,9 +87,13 @@ const usedChapterCards = new Set()
         // = '<img id='+id+' onclick ="drawCard()" src =../coauthor/cards/Motivation-'+randomNum+'.jpg />';
     }
 
-    function getRandomGenre(){
+    function getRandomGenre() {
         document.getElementById("genreHeader").innerHTML = 'Genre';
         let genres = ["Mystery", "Fantasy", "Comedy", "Adventure", "Horror", "Romance"]
         randomNum = Math.floor(Math.random() * 6);
         document.getElementById("genre").innerHTML = genres[randomNum];
+    }
+
+    function hideInstructions() {
+        document.getElementById("instructions").innerHTML = "";
     }
